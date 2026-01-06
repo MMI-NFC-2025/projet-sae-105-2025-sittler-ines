@@ -1,0 +1,46 @@
+/* ===============================
+   HERO (PAS LE HEADER)
+   =============================== */
+
+.hero {
+  padding: 2rem 1.2rem 3rem;
+  text-align: center;
+  background-color: #f6efdf;
+}
+
+/* TITRES */
+
+.hero__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a2e1e;
+  margin-bottom: 0.4rem;
+}
+
+.hero__subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6b3f2a;
+  margin-bottom: 2rem;
+}
+
+/* IMAGE PRINCIPALE */
+
+.hero__image {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+/* TEXTE D’ACCROCHE */
+
+.hero__intro {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.hero__intro-text {
+  font-size: 1rem;
+  color: #8b4f2c;
+  line-height: 1.6;
+}

@@ -1,0 +1,73 @@
+/* ===============================
+   CONTAINER DES CARDS
+   =============================== */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.card {
+  position: relative;
+  height: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* IMAGE = PREND TOUT */
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===============================
+   BANDE NOIRE EN BAS (OVERLAY)
+   =============================== */
+
+.card__content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.2rem;
+  color: #ffffff;
+
+  /* OPACITÉ MAÎTRISÉE */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.25)
+  );
+}
+
+/* ===============================
+   TEXTE
+   =============================== */
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card__text {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.card-wrapper {
+  margin-bottom: 1.8rem; /* ESPACE ENTRE CHAQUE CARD */
+}
+
+/* optionnel : enlever l’espace après la dernière */
+.card-wrapper:last-child {
+  margin-bottom: 0;
+}

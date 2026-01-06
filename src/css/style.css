@@ -1,0 +1,10 @@
+@import "./components/cardcta.css";
+@import "./components/global.css";
+@import "./layout/header.css";
+@import "./layout/footer.css";
+@import "./vendors/normalize.css";
+@import "./components/buttons.css";
+@import "./utils/main.css";
+@import "./utils/variables.css";
+@import "./layout/hero.css";
+@import "./layout/menu.css";
