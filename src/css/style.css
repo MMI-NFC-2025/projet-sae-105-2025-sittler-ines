@@ -22,3 +22,11 @@
 @import "./components/article.css";
 @import "./components/timeline.css";
 @import "./components/carousel.css";
+@import "./components/contact.css";
+
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

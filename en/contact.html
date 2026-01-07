@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Marie Meurdrac</title>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  </style>
+
+  <link rel="icon" type="image/png" href="../assets/Favicon/favicon.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/Favicon/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/Favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/Favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="../assets/Favicon/site.webmanifest" />
+
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a href="index.html" class="site-header__logo" aria-label="Back to home">
+      <img src="../assets/icons/logo-brun.svg" alt="Logo Marie Meurdrac">
+    </a>
+
+    <div class="site-header__actions">
+      <button class="site-header__lang" aria-label="Change language">EN</button>
+      <button class="burger" aria-label="Open menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul class="menu__list">
+      <li><a href="article-1.html">Marie Meurdrac</a></li>
+      <li><a href="article-2.html">La chymie charitable et facile en faveurs des dames</a></li>
+      <li><a href="article-3.html">La vulgarisation de sa théorie</a></li>
+      <li><a href="article-4.html">Les femmes de science dans la littérature</a></li>
+      <li><a href="article-5.html">Les Figures de l'ombre</a></li>
+      <li><a href="Frise.html">Timeline</a></li>
+      <li><a href="Glossaire.html">Glossary</a></li>
+      <li><a href="à-propos.html">About</a></li>
+      <li><a href="autre_projet.html">Other projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="contact">
+
+  <section class="contact-hero">
+    <h1 class="contact-hero__title">Contact</h1>
+  </section>
+
+  <section class="contact-card">
+
+    <div class="contact-card__header">
+      <img
+        src="../assets/icons/icon-mail.svg"
+        alt=""
+        class="contact-card__icon"
+      >
+      <h2 class="contact-card__title">Contact Form</h2>
+    </div>
+
+    <form class="contact-form">
+
+      <div class="contact-form__field">
+        <label for="name" class="contact-form__label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="contact-form__input"
+          placeholder="Your name"
+          required
+        >
+      </div>
+
+      <div class="contact-form__field">
+        <label for="email" class="contact-form__label">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="contact-form__input"
+          placeholder="your@email.com"
+          required
+        >
+      </div>
+
+      <div class="contact-form__field">
+        <label for="message" class="contact-form__label">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          class="contact-form__textarea"
+          placeholder="Your message"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="contact-form__submit">
+        Send message
+      </button>
+
+    </form>
+
+  </section>
+
+</main>
+
+
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="../assets/icons/lgo-creme.svg" alt="Logo Marie Meurdrac" class="footer__logo">
+    </div>
+  </div>
+
+  <div class="footer__content">
+    <nav class="footer__nav" aria-label="Secondary menu">
+      <p class="footer__title">Menu</p>
+      <ul class="footer__list">
+        <li><a href="Glossaire.html">Glossary</a></li>
+        <li><a href="autre_projet.html">Other projects</a></li>
+        <li><a href="à-propos.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <p class="footer__title">Follow us</p>
+      <div class="footer__icons">
+        <a href="#" aria-label="Follow us on Facebook">
+          <img src="../assets/icons/Facebook1.svg" alt="" aria-hidden="true">
+        </a>
+        <a href="#" aria-label="Follow us on Instagram">
+          <img src="../assets/icons/Instagram1.svg" alt="" aria-hidden="true">
+        </a>
+        <a href="#" aria-label="Follow us on Twitter">
+          <img src="../assets/icons/Twitter1.svg" alt="" aria-hidden="true">
+        </a>
+        <a href="#" aria-label="Follow us on YouTube">
+          <img src="../assets/icons/Youtube1.svg" alt="" aria-hidden="true">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p class="footer__credits">
+      Project carried out in 2025 as part of a pedagogical exercise<br>
+      at the <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank" rel="noopener noreferrer">MMI department Montbeliard</a>
+    </p>
+    <p class="footer__author">SITTLER Inès</p>
+  </div>
+</footer>
+
+<script src="../src/js/script.js"></script>
+
+</body>
+</html>
