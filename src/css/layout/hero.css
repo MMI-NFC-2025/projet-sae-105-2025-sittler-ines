@@ -1,46 +1,40 @@
 /* ===============================
-   HERO (PAS LE HEADER)
+   HERO HOMEPAGE
    =============================== */
 
 .hero {
-  padding: 2rem 1.2rem 3rem;
+  background-color: var(--color-bg-primary);
+  padding: var(--spacing-5xl) var(--spacing-xl);
   text-align: center;
-  background-color: #f6efdf;
 }
 
-/* TITRES */
-
 .hero__title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #4a2e1e;
-  margin-bottom: 0.4rem;
+  font-size: var(--font-size-5xl);
+  font-style: italic;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
 }
 
 .hero__subtitle {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #6b3f2a;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-md);
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-5xl);
 }
-
-/* IMAGE PRINCIPALE */
 
 .hero__image {
   width: 100%;
-  border-radius: 16px;
-  margin-bottom: 2rem;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-5xl);
+  border-radius: var(--radius-2xl);
 }
 
-/* TEXTE D’ACCROCHE */
-
 .hero__intro {
-  max-width: 32rem;
+  max-width: var(--max-width-text-intro);
   margin: 0 auto;
 }
 
 .hero__intro-text {
-  font-size: 1rem;
-  color: #8b4f2c;
-  line-height: 1.6;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-secondary);
 }

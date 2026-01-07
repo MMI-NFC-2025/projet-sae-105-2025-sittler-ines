@@ -1,0 +1,306 @@
+/* ===============================
+   HERO ARTICLE
+   =============================== */
+
+.article-hero {
+  background-color: var(--color-bg-primary);
+}
+
+/* WRAPPER IMAGE */
+.article-hero__media {
+  position: relative;
+}
+
+/* IMAGE */
+.article-hero__image {
+  width: 100%;
+  height: var(--height-hero-image);
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ DÉGRADÉ SUR L'IMAGE */
+.article-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero-overlay);
+}
+
+/* TEXTE */
+.article-hero__content {
+  padding: var(--spacing-4xl) var(--spacing-lg) var(--spacing-5xl);
+  text-align: center;
+}
+
+.article-hero__title {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.article-hero__intro {
+  font-size: var(--font-size-md);
+  color: var(--color-secondary);
+}
+
+/* ===============================
+   ARTICLE CONTENT
+   =============================== */
+
+.article {
+  padding: var(--spacing-3xl) var(--spacing-lg) var(--spacing-5xl);
+}
+
+.article__section {
+  margin-bottom: var(--spacing-4xl);
+}
+
+.article__heading {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.article__text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-md);
+}
+
+/* IMAGES INTERCALAIRES */
+
+.article__image {
+  width: 100%;
+  border-radius: var(--radius-2xl);
+  margin: var(--spacing-4xl) 0;
+}
+
+/* ===============================
+   CITATION
+   =============================== */
+
+.article-quote {
+  background-color: var(--color-bg-secondary);
+  border-left: var(--width-border-accent) solid var(--color-accent-gold);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-4xl) 0;
+}
+
+.article-quote__text {
+  font-style: italic;
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+}
+
+.article-quote__author {
+  font-size: var(--font-size-xs);
+  color: var(--color-secondary);
+}
+
+/* ===============================
+   INTRO ARTICLE
+   =============================== */
+
+.article-intro {
+  margin: var(--spacing-4xl) var(--spacing-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  /* TRAIT À GAUCHE */
+  border-left: var(--width-border-accent) solid var(--color-accent-gold);
+}
+
+.article-intro__text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+/* ===============================
+   CITATION (version étendue)
+   =============================== */
+
+.article-quote {
+  margin: var(--spacing-5xl) var(--spacing-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-xl);
+  /* TRAIT VERTICAL */
+  border-left: var(--width-border-accent) solid var(--color-accent-gold-alt);
+}
+
+.article-quote__text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  font-style: italic;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.article-quote__author {
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  color: var(--color-secondary);
+}
+
+.article-quote__source {
+  font-style: italic;
+}
+
+/* ===============================
+   HERO ARTICLE 2 – LIVRE
+   =============================== */
+
+.book-hero {
+  padding: var(--spacing-4xl) var(--spacing-xl) var(--spacing-5xl);
+  background-color: var(--color-bg-primary);
+  text-align: center;
+}
+
+/* TITRE */
+.book-hero__title {
+  max-width: 20ch;
+  margin: 0 auto var(--spacing-3xl);
+  font-size: var(--font-size-4xl);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  color: var(--color-primary);
+}
+
+/* IMAGE */
+.book-hero__media {
+  margin-bottom: var(--spacing-3xl);
+}
+
+.book-hero__image {
+  width: 100%;
+  max-width: var(--max-width-book-image);
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  display: block;
+}
+
+/* SOUS-TITRE */
+.book-hero__subtitle {
+  max-width: 24ch;
+  margin: 0 auto;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-snug);
+  color: var(--color-secondary);
+}
+
+/* ===============================
+   INFO CARD
+   =============================== */
+
+.info-card {
+  margin: var(--spacing-4xl) var(--spacing-lg);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-2xl);
+  /* TRAIT VERTICAL */
+  border-left: var(--width-border-accent) solid var(--color-accent-gold-alt);
+}
+
+/* TITRE */
+.info-card__title {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* TEXTE */
+.info-card__text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+/* ===============================
+   HERO ARTICLE 3
+   =============================== */
+
+.theory-hero {
+  background-color: var(--color-bg-primary);
+}
+
+/* IMAGE + CONTENEUR */
+.theory-hero__media {
+  position: relative;
+}
+
+/* IMAGE */
+.theory-hero__image {
+  width: 100%;
+  height: var(--height-hero-image);
+  object-fit: cover;
+  display: block;
+}
+
+/* DÉGRADÉ SUR L'IMAGE (BAS) */
+.theory-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero-overlay-alt);
+}
+
+/* TITRE POSÉ SUR LE DÉGRADÉ */
+.theory-hero__title {
+  position: absolute;
+  bottom: var(--spacing-2xl);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 22ch;
+  padding: 0 var(--spacing-md);
+  font-size: var(--font-size-3xl);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  text-align: center;
+  color: var(--color-primary);
+  z-index: 1;
+}
+
+/* ===============================
+   HERO ARTICLE 4 – LITTÉRATURE
+   =============================== */
+
+.literature-hero {
+  background-color: var(--color-bg-primary);
+}
+
+.literature-hero__media {
+  position: relative;
+}
+
+.literature-hero__image {
+  width: 100%;
+  height: var(--height-hero-image);
+  object-fit: cover;
+  display: block;
+}
+
+/* DÉGRADÉ SUR IMAGE */
+.literature-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero-overlay-alt);
+}
+
+/* TITRE POSÉ SUR LE DÉGRADÉ */
+.literature-hero__title {
+  position: absolute;
+  bottom: var(--spacing-2xl);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 24ch;
+  padding: 0 var(--spacing-md);
+  font-size: var(--font-size-3xl);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  text-align: center;
+  color: var(--color-primary);
+  z-index: 1;
+}

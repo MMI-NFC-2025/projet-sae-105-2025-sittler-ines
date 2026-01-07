@@ -1,14 +1,13 @@
 /* RESET */
 
-
 .main {
-  padding: 1rem;
+  padding: var(--spacing-md);
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--gap-md);
 }
 
 /* ===============================
@@ -16,34 +15,160 @@
    =============================== */
 
 .intro {
-  padding: 2.5rem 1.2rem;
+  padding: var(--spacing-4xl) var(--spacing-lg);
   display: flex;
   justify-content: center;
 }
 
 /* LE BLOC DE COULEUR */
 .intro__box {
-  background-color: #e9e1d2; /* beige/gris clair */
-  border-radius: 14px;
-  padding: 1.8rem 1.5rem;
-  max-width: 32rem;
+  background-color: var(--color-bg-tertiary);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  max-width: var(--max-width-intro-box);
   text-align: center;
 }
 
 /* TEXTE */
 .intro__text {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #2b2b2b;
-  margin-bottom: 1.5rem;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xl);
 }
 
 /* BOUTON */
 .intro__cta {
   display: inline-block;
-  padding: 0.6rem 1.4rem;
-  background-color: #8b4f2c;
-  color: #ffffff;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  padding: var(--spacing-xs) var(--spacing-xl);
+  background-color: var(--color-accent-brown-alt);
+  color: var(--color-text-light);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-sm);
+}
+
+/* ===============================
+   GLOSSAIRE – GLOBAL
+   =============================== */
+
+.glossary {
+  background-color: var(--color-bg-primary);
+  padding-bottom: var(--spacing-6xl);
+}
+
+/* ===============================
+   HERO
+   =============================== */
+
+.glossary-hero {
+  padding: var(--spacing-5xl) var(--spacing-xl) var(--spacing-3xl);
+  text-align: center;
+}
+
+.glossary-hero__title {
+  font-size: var(--font-size-5xl);
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+/* ===============================
+   LISTE
+   =============================== */
+
+.glossary-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  padding: 0 var(--spacing-xl);
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.glossary-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+}
+
+/* TERME */
+.glossary-card__term {
+  font-size: var(--font-size-md);
+  color: var(--color-tertiary);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* DÉFINITION */
+.glossary-card__definition {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+/* ===============================
+   À PROPOS – GLOBAL
+   =============================== */
+
+.about {
+  background-color: var(--color-bg-primary);
+  padding-bottom: var(--spacing-6xl);
+}
+
+/* ===============================
+   HERO
+   =============================== */
+
+.about-hero {
+  padding: var(--spacing-5xl) var(--spacing-xl) var(--spacing-4xl);
+  text-align: center;
+}
+
+.about-hero__title {
+  font-size: var(--font-size-5xl);
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.about-card {
+  margin: 0 var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-2xl);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-3xl);
+}
+
+/* HEADER DE CARD */
+.about-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-card__icon {
+  width: var(--width-icon-sm);
+  height: var(--width-icon-sm);
+}
+
+/* TITRE DE CARD */
+.about-card__title {
+  font-size: var(--font-size-md);
+  color: var(--color-tertiary);
+}
+
+/* TEXTE */
+.about-card__content p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+.about-card__content p + p {
+  margin-top: var(--spacing-md);
 }

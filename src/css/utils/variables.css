@@ -1,0 +1,142 @@
+/* ===============================
+   VARIABLES CSS – DESIGN SYSTEM
+   =============================== */
+
+:root {
+  /* ===== COULEURS ===== */
+
+  /* Couleurs principales */
+  --color-primary: #4a2e1e; /* Marron foncé - Titres principaux */
+  --color-primary-dark: #3a1f14; /* Marron très foncé - Ligne timeline */
+  --color-secondary: #6b3f2a; /* Marron moyen - Sous-titres, textes secondaires */
+  --color-tertiary: #a35a2a; /* Marron accent - Termes glossaire */
+
+  /* Couleurs de fond */
+  --color-bg-primary: #f6efdf; /* Beige principal - Fond sections */
+  --color-bg-secondary: #efe6d6; /* Beige secondaire - Intro, quotes */
+  --color-bg-tertiary: #e9e1d2; /* Beige/gris clair - Intro box */
+  --color-bg-card: #fffaf1; /* Beige très clair - Cards glossaire */
+  --color-bg-card-alt: #fff7ea; /* Beige clair alternatif - Timeline cards */
+
+  /* Couleurs de texte */
+  --color-text-primary: #2b2b2b; /* Gris foncé - Corps de texte */
+  --color-text-light: #ffffff; /* Blanc - Texte sur fond sombre */
+
+  /* Couleurs d'accent / CTA */
+  --color-accent-gold: #c89b4c; /* Doré principal - Bordures quotes */
+  --color-accent-gold-alt: #b9833a; /* Doré alternatif - Bordures info */
+  --color-accent-gold-light: #c9a24f; /* Doré clair - Timeline bar */
+  --color-accent-brown: #8b5e3c; /* Marron CTA - Boutons */
+  --color-accent-brown-alt: #8b4f2c; /* Marron CTA alternatif */
+  --color-accent-orange: #b07a3a; /* Orange - Timeline field */
+
+  /* Couleurs de bordure */
+  --color-border-light: #e6cfa3; /* Bordure beige clair */
+  --color-border-alt: #e4cfa3; /* Bordure beige alternatif */
+
+  /* Couleurs timeline */
+  --color-timeline-bar: #a88a6a; /* Bar timeline normale */
+  --color-timeline-dates: #9b7a5a; /* Dates timeline */
+
+  /* ===== ESPACEMENTS ===== */
+
+  /* Spacing scale */
+  --spacing-xs: 0.6rem; /* 9.6px */
+  --spacing-sm: 0.8rem; /* 12.8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.2rem; /* 19.2px */
+  --spacing-xl: 1.5rem; /* 24px */
+  --spacing-2xl: 1.8rem; /* 28.8px */
+  --spacing-3xl: 2rem; /* 32px */
+  --spacing-4xl: 2.5rem; /* 40px */
+  --spacing-5xl: 3rem; /* 48px */
+  --spacing-6xl: 4rem; /* 64px */
+
+  /* Gaps spécifiques */
+  --gap-xs: 0.5rem; /* 8px */
+  --gap-md: 1.5rem; /* 24px */
+  --gap-lg: 2rem; /* 32px */
+
+  /* ===== TYPOGRAPHIE ===== */
+
+  /* Font sizes */
+  --font-size-xs: 0.85rem; /* 13.6px */
+  --font-size-sm: 0.9rem; /* 14.4px */
+  --font-size-base: 0.95rem; /* 15.2px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.1rem; /* 17.6px */
+  --font-size-xl: 1.3rem; /* 20.8px */
+  --font-size-2xl: 1.6rem; /* 25.6px */
+  --font-size-3xl: 1.8rem; /* 28.8px */
+  --font-size-4xl: 1.9rem; /* 30.4px */
+  --font-size-5xl: 2rem; /* 32px */
+  --font-size-icon: 2rem; /* 32px - Icônes carousel */
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.7;
+
+  /* ===== BORDER RADIUS ===== */
+
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 14px;
+  --radius-3xl: 16px;
+  --radius-full: 100px; /* Pour images rondes */
+
+  /* ===== DIMENSIONS ===== */
+
+  /* Largeurs */
+  --width-icon-sm: 20px;
+  --width-icon-md: 36px;
+  --width-timeline-line: 6px;
+  --width-border-accent: 4px;
+  --height-border-accent: 3px;
+
+  /* Hauteurs */
+  --height-hero-image: 260px;
+  --height-card: 360px;
+  --height-carousel-image: 260px;
+
+  /* Max-widths */
+  --max-width-book-image: 320px;
+  --max-width-timeline-card: 320px;
+  --max-width-intro-box: 32rem;
+  --max-width-text-intro: 32ch;
+  --max-width-text-title: 20ch;
+  --max-width-text-subtitle: 24ch;
+  --max-width-text-about: 34ch;
+
+  /* ===== OMBRES ===== */
+
+  --shadow-card: 0 8px 20px rgba(0, 0, 0, 0.45);
+
+  /* ===== TRANSITIONS ===== */
+
+  --transition-default: 0.4s ease;
+
+  /* ===== GRADIENTS ===== */
+
+  /* Dégradé overlay card */
+  --gradient-card-overlay: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+
+  /* Dégradé hero article (rgba de --color-bg-primary: #f6efdf = 246, 239, 223) */
+  --gradient-hero-overlay: linear-gradient(
+    to bottom,
+    rgba(246, 239, 223, 0) 40%,
+    rgba(246, 239, 223, 0.6) 65%,
+    rgba(246, 239, 223, 1) 100%
+  );
+
+  --gradient-hero-overlay-alt: linear-gradient(
+    to bottom,
+    rgba(246, 239, 223, 0) 45%,
+    rgba(246, 239, 223, 0.6) 70%,
+    rgba(246, 239, 223, 1) 100%
+  );
+}

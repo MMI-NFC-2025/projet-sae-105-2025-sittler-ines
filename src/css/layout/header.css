@@ -1,87 +1,56 @@
+/* ===============================
+   HEADER
+   =============================== */
+
 .site-header {
-  background-color: #f6efdf;
-  border-bottom: 3px solid #d6b24c;
+  background-color: var(--color-bg-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-header__bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.2rem;
+  padding: var(--spacing-md) var(--spacing-xl);
 }
 
 .site-header__logo img {
   height: 40px;
 }
 
-/* ACTIONS */
-
 .site-header__actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--spacing-md);
 }
 
 .site-header__lang {
   background: none;
-  border: none;
-  font-family: Georgia, serif;
-  font-size: 1rem;
-  color: #8b4f2c;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
 }
 
-/* BURGER */
+/* ===============================
+   BURGER MENU
+   =============================== */
 
 .burger {
-  width: 28px;
-  height: 20px;
-  position: relative;
-  border: none;
   background: none;
-  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--spacing-xs);
 }
 
 .burger__line {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  width: 25px;
   height: 2px;
-  background-color: #8b4f2c;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.burger__line:nth-child(1) {
-  top: 0;
-}
-
-.burger__line:nth-child(2) {
-  top: 9px;
-}
-
-.burger__line:nth-child(3) {
-  bottom: 0;
-}
-
-/* CROIX */
-
-.burger--open .burger__line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger--open .burger__line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger--open .burger__line:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-.site-header {
-  position: relative;
-  z-index: 1100; /* PLUS HAUT QUE LE MENU */
-}
-
-.burger {
-  position: relative;
-  z-index: 1200; /* AU-DESSUS DU MENU */
+  background-color: var(--color-primary);
+  transition: var(--transition-default);
 }

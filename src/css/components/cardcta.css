@@ -5,7 +5,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--gap-md);
 }
 
 /* ===============================
@@ -14,10 +14,10 @@
 
 .card {
   position: relative;
-  height: 360px;
-  border-radius: 16px;
+  height: var(--height-card);
+  border-radius: var(--radius-3xl);
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow-card);
 }
 
 /* IMAGE = PREND TOUT */
@@ -37,15 +37,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 1.2rem;
-  color: #ffffff;
-
+  padding: var(--spacing-lg);
+  color: var(--color-text-light);
   /* OPACITÉ MAÎTRISÉE */
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.25)
-  );
+  background: var(--gradient-card-overlay);
 }
 
 /* ===============================
@@ -53,21 +48,21 @@
    =============================== */
 
 .card__title {
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  margin-bottom: var(--spacing-xs);
 }
 
 .card__text {
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-snug);
 }
 
 .card-wrapper {
-  margin-bottom: 1.8rem; /* ESPACE ENTRE CHAQUE CARD */
+  margin-bottom: var(--spacing-2xl);
 }
 
-/* optionnel : enlever l’espace après la dernière */
+/* optionnel : enlever l'espace après la dernière */
 .card-wrapper:last-child {
   margin-bottom: 0;
 }

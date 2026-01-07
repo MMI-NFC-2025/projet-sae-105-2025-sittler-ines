@@ -1,0 +1,126 @@
+/* ===============================
+   FRISE – INTRO
+   =============================== */
+
+.timeline {
+  background-color: var(--color-bg-primary);
+}
+
+/* HERO */
+.timeline-hero {
+  padding: var(--spacing-5xl) var(--spacing-xl) var(--spacing-6xl);
+  text-align: center;
+}
+
+/* TITRE */
+.timeline-hero__title {
+  font-size: var(--font-size-5xl);
+  font-style: italic;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* TEXTE INTRO */
+.timeline-hero__intro {
+  max-width: 32ch;
+  margin: 0 auto;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-secondary);
+}
+
+/* ===============================
+   TIMELINE – STRUCTURE
+   =============================== */
+
+.timeline-content {
+  position: relative;
+  padding: var(--spacing-3xl) var(--spacing-xl) var(--spacing-6xl);
+  display: flex;
+}
+
+/* LIGNE VERTICALE */
+.timeline-line {
+  position: relative;
+  width: var(--width-timeline-line);
+  background-color: var(--color-primary-dark);
+  border-radius: var(--radius-sm);
+  margin-right: var(--spacing-xl);
+}
+
+/* FLÈCHE */
+.timeline-line__arrow {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 18px solid var(--color-primary-dark);
+}
+
+/* LISTE */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+/* ===============================
+   CARD
+   =============================== */
+
+.timeline-card {
+  background-color: var(--color-bg-card-alt);
+  border: 1px solid var(--color-border-alt);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-2xl);
+  max-width: var(--max-width-timeline-card);
+}
+
+/* PETIT TRAIT EN HAUT */
+.timeline-card__bar {
+  display: block;
+  width: var(--width-icon-md);
+  height: var(--height-border-accent);
+  background-color: var(--color-timeline-bar);
+  border-radius: var(--radius-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.timeline-card__bar--dark {
+  background-color: var(--color-secondary);
+}
+
+.timeline-card__bar--gold {
+  background-color: var(--color-accent-gold-light);
+}
+
+/* TITRES */
+.timeline-card__name {
+  font-size: var(--font-size-md);
+  color: var(--color-secondary);
+  margin-bottom: 0.2rem;
+}
+
+.timeline-card__dates {
+  font-size: var(--font-size-xs);
+  color: var(--color-timeline-dates);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* CONTENU */
+.timeline-card__field {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-accent-orange);
+  margin-bottom: 0.4rem;
+}
+
+.timeline-card__text {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+}

@@ -1,8 +1,12 @@
+/* ===============================
+   BUTTONS
+   =============================== */
+
 .header__cta {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #8b5e3c;
-  color: white;
-  border-radius: 4px;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  background-color: var(--color-accent-brown);
+  color: var(--color-text-light);
+  border-radius: var(--radius-md);
 }
