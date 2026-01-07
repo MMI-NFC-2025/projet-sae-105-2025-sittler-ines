@@ -4,7 +4,6 @@
 
 .site-header {
   background-color: var(--color-bg-primary);
-  border-bottom: 2px solid var(--color-accent-gold);
 }
 .site-header__bar {
   display: flex;
@@ -12,6 +11,7 @@
   align-items: center;
 
   padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 2px solid var(--color-accent-gold);
 }
 .site-header__logo img {
   height: 50px;
